@@ -392,7 +392,7 @@ export class ProjectComponentsPage extends AddComponentModal {
     }
 
     async uploadBom(filePathFromProjectRoot?: string) {
-        filePathFromProjectRoot ??= "e2e/playwright-tests/resources/dtrack-5.6.0-sbom.json";
+        filePathFromProjectRoot ??= "playwright-tests/resources/dtrack-5.6.0-sbom.json";
 
         await this.uploadBomButton.click();
         await this.page.waitForTimeout(1000);
@@ -580,7 +580,7 @@ export class ProjectAuditVulnerabilitiesPage {
     }
 
     async applyVex(filePathFromProjectRoot?: string) {
-        filePathFromProjectRoot ??= "e2e/playwright-tests/resources/dtrack-4.8.0.vex.cdx.json";
+        filePathFromProjectRoot ??= "playwright-tests/resources/dtrack-4.8.0.vex.cdx.json";
         await this.applyVexButton.click();
         await this.page.waitForTimeout(1000);
 
