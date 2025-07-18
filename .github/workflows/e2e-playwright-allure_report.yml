@@ -33,9 +33,15 @@ jobs:
                 ALPINE_BCRYPT_ROUNDS: "4"
           EOF
 
+      - name: Checkout Hyades Repository
+        uses: actions/checkout@v4
+        with:
+          repository: DependencyTrack/hyades
+          path: hyades
+
       - name: Start DependencyTrack
         run: |
-          docker compose -f docker-compose.yml -f docker-compose.override.yml --profile demo up -d --pull always
+          docker compose -f ./hyades/docker-compose.yml -f docker-compose.override.yml --profile demo up -d --pull always
 
       - name: Generate Random UUID for password use
         run: |
@@ -77,7 +83,7 @@ jobs:
         if: always()
         continue-on-error: true
         with:
-          ref: main
+          ref: allure-report
           path: latest-test-results
 
       - name: Build test report
@@ -92,6 +98,7 @@ jobs:
         uses: peaceiris/actions-gh-pages@v4
         if: always()
         with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: allure-report # branch-name to paste history to
           publish_dir: allure-history # directory to be published
           user_name: 'github-actions[bot]' # user for publishing
