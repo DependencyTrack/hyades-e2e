@@ -1,0 +1,105 @@
+# Page snapshot
+
+```yaml
+- banner:
+  - img "Dependency-Track Logo"
+  - button
+  - list:
+    - listitem:
+      - button ""
+- navigation:
+  - list:
+    - listitem:
+      - link " Dashboard":
+        - /url: /dashboard
+    - listitem: Portfolio
+    - listitem:
+      - link " Projects":
+        - /url: /projects
+    - listitem:
+      - link " Components":
+        - /url: /components
+    - listitem:
+      - link " Vulnerabilities":
+        - /url: /vulnerabilities
+    - listitem:
+      - link " Licenses":
+        - /url: /licenses
+    - listitem:
+      - link " Tags":
+        - /url: /tags
+    - listitem: Global Audit
+    - listitem:
+      - link " Vulnerability Audit":
+        - /url: /vulnerabilityAudit
+    - listitem:
+      - link " Policy Violation Audit":
+        - /url: /policyViolationAudit
+    - listitem: Administration
+    - listitem:
+      - link " Policy Management":
+        - /url: /policy
+    - listitem:
+      - link " Administration":
+        - /url: /admin
+- button
+- main:
+  - list:
+    - listitem:
+      - link "Home":
+        - /url: /
+    - listitem: / Administration
+  - button " Configuration":
+    - text: 
+    - strong: Configuration
+  - button " Analyzers":
+    - text: 
+    - strong: Analyzers
+  - button " Vulnerability Sources":
+    - text: 
+    - strong: Vulnerability Sources
+  - button " Repositories":
+    - text: 
+    - strong: Repositories
+  - button " Notifications":
+    - text: 
+    - strong: Notifications
+  - button " Integrations":
+    - text: 
+    - strong: Integrations
+  - button " Access Management" [expanded]:
+    - text: 
+    - strong: Access Management
+  - tabpanel:
+    - tablist:
+      - tab "LDAP Users"
+      - tab "Managed Users" [selected]
+      - tab "OpenID Connect Users"
+      - tab "OpenID Connect Groups"
+      - tab "Roles"
+      - tab "Teams"
+      - tab "Permissions"
+      - tab "Portfolio Access Control"
+  - text: General
+  - button " Create User"
+  - button "Refresh": 
+  - button "Columns": 
+  - searchbox "Search"
+  - table:
+    - rowgroup:
+      - row "Username Full name Email Teams":
+        - cell "Username"
+        - cell "Full name"
+        - cell "Email"
+        - cell "Teams"
+    - rowgroup:
+      - row "admin Administrator admin@localhost 1":
+        - cell "admin"
+        - cell "Administrator"
+        - cell "admin@localhost"
+        - cell "1"
+  - text: Showing 1 to 1 of 1 rows
+- contentinfo:
+  - button "Dependency-Track"
+  - text: v5.6.0-SNAPSHOT
+```
