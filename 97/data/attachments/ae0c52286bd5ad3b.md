@@ -1,0 +1,260 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - img "Dependency-Track Logo" [ref=e4]
+      - button [ref=e5] [cursor=pointer]
+      - list [ref=e7]:
+        - listitem [ref=e8]:
+          - button "" [ref=e9] [cursor=pointer]:
+            - generic [ref=e10] [cursor=pointer]: 
+          - text:    
+    - generic [ref=e11]:
+      - generic [ref=e12]:
+        - navigation [ref=e13]:
+          - list [ref=e15]:
+            - listitem [ref=e16]:
+              - link " Dashboard" [ref=e17] [cursor=pointer]:
+                - /url: /dashboard
+                - generic [ref=e18] [cursor=pointer]: 
+                - text: Dashboard
+            - listitem [ref=e19]: Portfolio
+            - listitem [ref=e20]:
+              - link " Projects" [ref=e21] [cursor=pointer]:
+                - /url: /projects
+                - generic [ref=e22] [cursor=pointer]: 
+                - text: Projects
+            - listitem [ref=e23]:
+              - link " Components" [ref=e24] [cursor=pointer]:
+                - /url: /components
+                - generic [ref=e25] [cursor=pointer]: 
+                - text: Components
+            - listitem [ref=e26]:
+              - link " Vulnerabilities" [ref=e27] [cursor=pointer]:
+                - /url: /vulnerabilities
+                - generic [ref=e28] [cursor=pointer]: 
+                - text: Vulnerabilities
+            - listitem [ref=e29]:
+              - link " Licenses" [ref=e30] [cursor=pointer]:
+                - /url: /licenses
+                - generic [ref=e31] [cursor=pointer]: 
+                - text: Licenses
+            - listitem [ref=e32]:
+              - link " Tags" [ref=e33] [cursor=pointer]:
+                - /url: /tags
+                - generic [ref=e34] [cursor=pointer]: 
+                - text: Tags
+            - listitem [ref=e35]: Global Audit
+            - listitem [ref=e36]:
+              - link " Vulnerability Audit" [ref=e37] [cursor=pointer]:
+                - /url: /vulnerabilityAudit
+                - generic [ref=e38] [cursor=pointer]: 
+                - text: Vulnerability Audit
+            - listitem [ref=e39]:
+              - link " Policy Violation Audit" [ref=e40] [cursor=pointer]:
+                - /url: /policyViolationAudit
+                - generic [ref=e41] [cursor=pointer]: 
+                - text: Policy Violation Audit
+            - listitem [ref=e42]: Administration
+            - listitem [ref=e43]:
+              - link " Policy Management" [ref=e44] [cursor=pointer]:
+                - /url: /policy
+                - generic [ref=e45] [cursor=pointer]: 
+                - text: Policy Management
+            - listitem [ref=e46]:
+              - link " Administration" [ref=e47] [cursor=pointer]:
+                - /url: /admin
+                - generic [ref=e48] [cursor=pointer]: 
+                - text: Administration
+        - button [ref=e49] [cursor=pointer]
+      - main [ref=e50]:
+        - list [ref=e51]:
+          - listitem [ref=e52]:
+            - link "Home" [ref=e53] [cursor=pointer]:
+              - /url: /
+          - listitem [ref=e54]:
+            - text: /
+            - generic [ref=e55]: Administration
+        - generic [ref=e58]:
+          - generic [ref=e60]:
+            - button " Configuration" [ref=e63] [cursor=pointer]:
+              - generic [ref=e64] [cursor=pointer]: 
+              - strong [ref=e65] [cursor=pointer]: Configuration
+            - button " Analyzers" [ref=e68] [cursor=pointer]:
+              - generic [ref=e69] [cursor=pointer]: 
+              - strong [ref=e70] [cursor=pointer]: Analyzers
+            - button " Vulnerability Sources" [ref=e73] [cursor=pointer]:
+              - generic [ref=e74] [cursor=pointer]: 
+              - strong [ref=e75] [cursor=pointer]: Vulnerability Sources
+            - button " Repositories" [ref=e78] [cursor=pointer]:
+              - generic [ref=e79] [cursor=pointer]: 
+              - strong [ref=e80] [cursor=pointer]: Repositories
+            - button " Notifications" [ref=e83] [cursor=pointer]:
+              - generic [ref=e84] [cursor=pointer]: 
+              - strong [ref=e85] [cursor=pointer]: Notifications
+            - button " Integrations" [ref=e88] [cursor=pointer]:
+              - generic [ref=e89] [cursor=pointer]: 
+              - strong [ref=e90] [cursor=pointer]: Integrations
+            - generic [ref=e91]:
+              - button " Access Management" [expanded] [ref=e93] [cursor=pointer]:
+                - generic [ref=e94] [cursor=pointer]: 
+                - strong [ref=e95] [cursor=pointer]: Access Management
+              - tabpanel [ref=e96]:
+                - tablist [ref=e97]:
+                  - tab "LDAP Users" [ref=e98] [cursor=pointer]
+                  - tab "Managed Users" [selected] [ref=e99] [cursor=pointer]
+                  - tab "OpenID Connect Users" [ref=e100] [cursor=pointer]
+                  - tab "OpenID Connect Groups" [ref=e101] [cursor=pointer]
+                  - tab "Roles" [ref=e102] [cursor=pointer]
+                  - tab "Teams" [ref=e103] [cursor=pointer]
+                  - tab "Permissions" [ref=e104] [cursor=pointer]
+                  - tab "Portfolio Access Control" [ref=e105] [cursor=pointer]
+          - generic [ref=e108]:
+            - generic [ref=e109]: General
+            - generic [ref=e111]:
+              - generic [ref=e112]:
+                - button " Create User" [ref=e115] [cursor=pointer]:
+                  - generic [ref=e116] [cursor=pointer]: 
+                  - text: Create User
+                - generic [ref=e117]:
+                  - button "Refresh" [ref=e118] [cursor=pointer]:
+                    - generic [ref=e119] [cursor=pointer]: 
+                  - button "Columns" [ref=e121] [cursor=pointer]:
+                    - generic [ref=e122] [cursor=pointer]: 
+                - searchbox "Search" [ref=e124]: test-user_VP_PERMS
+              - table [ref=e127]:
+                - rowgroup [ref=e128]:
+                  - row "Username Full name Email Teams" [ref=e129]:
+                    - cell "Username" [ref=e130]:
+                      - generic [ref=e131]: Username
+                    - cell "Full name" [ref=e132]:
+                      - generic [ref=e133]: Full name
+                    - cell "Email" [ref=e134]:
+                      - generic [ref=e135]: Email
+                    - cell "Teams" [ref=e136]:
+                      - generic [ref=e137]: Teams
+                - rowgroup [ref=e138]:
+                  - row "test-user_VP_PERMS test-user_VP_PERMS test-user_VP_PERMS 0" [ref=e139]:
+                    - cell "test-user_VP_PERMS" [ref=e140]
+                    - cell "test-user_VP_PERMS" [ref=e141]
+                    - cell "test-user_VP_PERMS" [ref=e142]
+                    - cell "0" [ref=e143]
+                  - row "Team membership Permissions ✕ User must change password at next login ✕ Password never expires ✕ Suspended Change Password Delete User Projects Project Role " [ref=e144]:
+                    - cell "Team membership Permissions ✕ User must change password at next login ✕ Password never expires ✕ Suspended Change Password Delete User Projects Project Role " [ref=e145]:
+                      - generic [ref=e146]:
+                        - generic [ref=e147]:
+                          - generic [ref=e148]:
+                            - group "Team membership" [ref=e149]:
+                              - generic [ref=e150]: Team membership
+                              - listitem [ref=e153]:
+                                - button "" [ref=e154] [cursor=pointer]:
+                                  - generic [ref=e155] [cursor=pointer]: 
+                            - group "Permissions" [ref=e157]:
+                              - generic [ref=e158]: Permissions
+                              - listitem [ref=e161]:
+                                - button "" [ref=e162] [cursor=pointer]:
+                                  - generic [ref=e163] [cursor=pointer]: 
+                          - generic [ref=e165]:
+                            - group [ref=e166]:
+                              - generic [ref=e167]: Full name *
+                              - group [ref=e169]:
+                                - textbox "Full name *" [ref=e170]: test-user_VP_PERMS
+                            - group [ref=e171]:
+                              - generic [ref=e172]: Email *
+                              - group [ref=e174]:
+                                - textbox "Email *" [ref=e175]: test-user_VP_PERMS
+                            - generic [ref=e177] [cursor=pointer]: ✕
+                            - text: User must change password at next login
+                            - generic [ref=e179] [cursor=pointer]: ✕
+                            - text: Password never expires
+                            - generic [ref=e181] [cursor=pointer]: ✕
+                            - text: Suspended
+                            - generic [ref=e182]:
+                              - button "Change Password" [ref=e183] [cursor=pointer]
+                              - button "Delete User" [ref=e184] [cursor=pointer]
+                        - generic [ref=e187]:
+                          - generic [ref=e188]: Projects
+                          - table [ref=e190]:
+                            - rowgroup [ref=e191]:
+                              - row "Project Role" [ref=e192]:
+                                - columnheader "Project" [ref=e193]:
+                                  - generic [ref=e194]: Project
+                                - columnheader "Role" [ref=e195]:
+                                  - generic [ref=e196]: Role
+                            - rowgroup
+                            - rowgroup [ref=e197]:
+                              - row "" [ref=e198]:
+                                - columnheader "" [ref=e199]:
+                                  - button "" [ref=e200] [cursor=pointer]:
+                                    - generic [ref=e201] [cursor=pointer]: 
+              - generic [ref=e204]: Showing 1 to 1 of 1 rows
+    - contentinfo [ref=e205]:
+      - generic [ref=e206]:
+        - button "Dependency-Track" [ref=e207] [cursor=pointer]
+        - generic [ref=e208]: v5.7.0-SNAPSHOT
+  - dialog "Select Project" [ref=e209]:
+    - generic [ref=e210]:
+      - banner [ref=e211]:
+        - heading "Select Project" [level=5] [ref=e212]
+      - generic [ref=e214]:
+        - generic [ref=e215]:
+          - generic [ref=e216]:
+            - button "Refresh" [ref=e217] [cursor=pointer]:
+              - generic [ref=e218] [cursor=pointer]: 
+            - button "Columns" [ref=e220] [cursor=pointer]:
+              - generic [ref=e221] [cursor=pointer]: 
+          - searchbox "Search" [active] [ref=e223]: VIEW_PORTFOLIO
+        - table [ref=e226]:
+          - rowgroup [ref=e227]:
+            - row "Project Name Version Active" [ref=e228]:
+              - cell [ref=e229]:
+                - checkbox [ref=e232]
+              - cell "Project Name" [ref=e233]:
+                - generic [ref=e234] [cursor=pointer]: Project Name
+              - cell "Version" [ref=e235]:
+                - generic [ref=e236] [cursor=pointer]: Version
+              - cell "Active" [ref=e237]:
+                - generic [ref=e238] [cursor=pointer]: Active
+          - rowgroup [ref=e239]:
+            - row "test-project02 " [ref=e240]:
+              - cell [ref=e241]:
+                - checkbox [ref=e243]
+              - cell "test-project02" [ref=e244]
+              - cell [ref=e245]
+              - cell "" [ref=e246]:
+                - generic [ref=e247]: 
+            - row "test-project05 " [ref=e248]:
+              - cell [ref=e249]:
+                - checkbox [ref=e251]
+              - cell "test-project05" [ref=e252]
+              - cell [ref=e253]
+              - cell "" [ref=e254]:
+                - generic [ref=e255]: 
+            - row "test-project04 " [ref=e256]:
+              - cell [ref=e257]:
+                - checkbox [ref=e259]
+              - cell "test-project04" [ref=e260]
+              - cell [ref=e261]
+              - cell "" [ref=e262]:
+                - generic [ref=e263]: 
+            - row "test-project01 " [ref=e264]:
+              - cell [ref=e265]:
+                - checkbox [ref=e267]
+              - cell "test-project01" [ref=e268]
+              - cell [ref=e269]
+              - cell "" [ref=e270]:
+                - generic [ref=e271]: 
+            - row "test-project03 " [ref=e272]:
+              - cell [ref=e273]:
+                - checkbox [ref=e275]
+              - cell "test-project03" [ref=e276]
+              - cell [ref=e277]
+              - cell "" [ref=e278]:
+                - generic [ref=e279]: 
+        - generic [ref=e282]: Showing 1 to 5 of 5 rows
+      - contentinfo [ref=e283]:
+        - button "Cancel" [ref=e284] [cursor=pointer]
+        - button "Select" [ref=e285] [cursor=pointer]
+```
