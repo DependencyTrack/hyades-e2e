@@ -1,4 +1,6 @@
 name: Playwright E2E Tests
+permissions: {}
+
 on:
   workflow_dispatch:
      inputs:
@@ -21,8 +23,8 @@ jobs:
     outputs:
       upload_success: ${{ steps.set-upload-status.outputs.upload_success }}
     steps:
-      - uses: actions/checkout@v6
-      - uses: actions/setup-node@v6
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # tag=v6.0.2
+      - uses: actions/setup-node@53b83947a5a98c8d113130e565377fae1a50d02f # tag=v6.3.0
         with:
           node-version: lts/*
 
@@ -36,7 +38,7 @@ jobs:
           EOF
 
       - name: Checkout Hyades Repository
-        uses: actions/checkout@v6
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # tag=v6.0.2
         with:
           repository: DependencyTrack/hyades
           path: hyades
@@ -65,7 +67,7 @@ jobs:
       - name: Upload test results
         id: upload-step
         if: ${{ !cancelled() }}
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@bbbca2ddaa5d8feaa63e36b76fdaad77386f024f # tag=v7.0.0
         with:
           name: playwright-results
           path: playwright-test-results/allure-results
@@ -81,18 +83,20 @@ jobs:
           fi
 
   publish-results:
+    permissions:
+      contents: write
     needs: run-playwright-e2e
     runs-on: ubuntu-latest
     if: "${{ always() && needs.run-playwright-e2e.outputs.upload_success == 'true' && github.repository_owner == 'DependencyTrack' }}"
     steps:
       - name: Download test results
-        uses: actions/download-artifact@v7
+        uses: actions/download-artifact@70fc10c6e5e1ce46ad2ea6f2b72d43f7d47b13c3 # tag=v8.0.0
         with:
           name: playwright-results
           path: playwright-test-results/allure-results
 
       - name: Load test report history
-        uses: actions/checkout@v6
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # tag=v6.0.2
         if: always()
         continue-on-error: true
         with:
@@ -100,7 +104,7 @@ jobs:
           path: latest-test-results
 
       - name: Build test report
-        uses: simple-elf/allure-report-action@v1.13
+        uses: simple-elf/allure-report-action@53ebb757a2097edc77c53ecef4d454fc2f2f774c # tag=v1.13
         if: always()
         with:
           gh_pages: latest-test-results
@@ -108,7 +112,7 @@ jobs:
           allure_history: allure-history # directory to be published
 
       - name: Publish test report
-        uses: peaceiris/actions-gh-pages@v4
+        uses: peaceiris/actions-gh-pages@4f9cc6602d3f66b9c108549d475ec49e8ef4d45e # tag=v4.0.0
         if: always()
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
