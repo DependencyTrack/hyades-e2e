@@ -1,0 +1,196 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - img "Dependency-Track Logo" [ref=e4]
+    - button [ref=e5] [cursor=pointer]
+    - list [ref=e7]:
+      - listitem [ref=e8]:
+        - button "" [ref=e9] [cursor=pointer]:
+          - generic [ref=e10]: 
+        - text:    
+  - generic [ref=e11]:
+    - generic [ref=e12]:
+      - navigation [ref=e13]:
+        - list [ref=e15]:
+          - listitem [ref=e16]:
+            - link " Dashboard" [ref=e17] [cursor=pointer]:
+              - /url: /dashboard
+              - generic [ref=e18]: 
+              - text: Dashboard
+          - listitem [ref=e19]: Portfolio
+          - listitem [ref=e20]:
+            - link " Projects" [ref=e21] [cursor=pointer]:
+              - /url: /projects
+              - generic [ref=e22]: 
+              - text: Projects
+          - listitem [ref=e23]:
+            - link " Components" [ref=e24] [cursor=pointer]:
+              - /url: /components
+              - generic [ref=e25]: 
+              - text: Components
+          - listitem [ref=e26]:
+            - link " Vulnerabilities" [ref=e27] [cursor=pointer]:
+              - /url: /vulnerabilities
+              - generic [ref=e28]: 
+              - text: Vulnerabilities
+          - listitem [ref=e29]:
+            - link " Licenses" [ref=e30] [cursor=pointer]:
+              - /url: /licenses
+              - generic [ref=e31]: 
+              - text: Licenses
+          - listitem [ref=e32]:
+            - link " Tags" [ref=e33] [cursor=pointer]:
+              - /url: /tags
+              - generic [ref=e34]: 
+              - text: Tags
+          - listitem [ref=e35]: Global Audit
+          - listitem [ref=e36]:
+            - link " Vulnerability Audit" [ref=e37] [cursor=pointer]:
+              - /url: /vulnerabilityAudit
+              - generic [ref=e38]: 
+              - text: Vulnerability Audit
+          - listitem [ref=e39]:
+            - link " Policy Violation Audit" [ref=e40] [cursor=pointer]:
+              - /url: /policyViolationAudit
+              - generic [ref=e41]: 
+              - text: Policy Violation Audit
+          - listitem [ref=e42]: Administration
+          - listitem [ref=e43]:
+            - link " Policy Management" [ref=e44] [cursor=pointer]:
+              - /url: /policy
+              - generic [ref=e45]: 
+              - text: Policy Management
+          - listitem [ref=e46]:
+            - link " Administration" [ref=e47] [cursor=pointer]:
+              - /url: /admin
+              - generic [ref=e48]: 
+              - text: Administration
+      - button [ref=e49] [cursor=pointer]
+    - main [ref=e50]:
+      - list [ref=e51]:
+        - listitem [ref=e52]:
+          - link "Home" [ref=e53] [cursor=pointer]:
+            - /url: /
+        - listitem [ref=e54]: / Administration
+      - generic [ref=e57]:
+        - generic [ref=e59]:
+          - button " Configuration" [ref=e62] [cursor=pointer]:
+            - generic [ref=e63]: 
+            - strong [ref=e64]: Configuration
+          - button " Secrets" [ref=e67] [cursor=pointer]:
+            - generic [ref=e68]: 
+            - strong [ref=e69]: Secrets
+          - button " Analyzers" [ref=e72] [cursor=pointer]:
+            - generic [ref=e73]: 
+            - strong [ref=e74]: Analyzers
+          - button " Vulnerability Sources" [ref=e77] [cursor=pointer]:
+            - generic [ref=e78]: 
+            - strong [ref=e79]: Vulnerability Sources
+          - button " Repositories" [ref=e82] [cursor=pointer]:
+            - generic [ref=e83]: 
+            - strong [ref=e84]: Repositories
+          - button " Notifications" [ref=e87] [cursor=pointer]:
+            - generic [ref=e88]: 
+            - strong [ref=e89]: Notifications
+          - button " Integrations" [ref=e92] [cursor=pointer]:
+            - generic [ref=e93]: 
+            - strong [ref=e94]: Integrations
+          - generic [ref=e95]:
+            - button " Access Management" [expanded] [ref=e97] [cursor=pointer]:
+              - generic [ref=e98]: 
+              - strong [ref=e99]: Access Management
+            - tabpanel [ref=e100]:
+              - tablist [ref=e101]:
+                - tab "LDAP Users" [ref=e102] [cursor=pointer]
+                - tab "Managed Users" [selected] [ref=e103] [cursor=pointer]
+                - tab "OpenID Connect Users" [ref=e104] [cursor=pointer]
+                - tab "OpenID Connect Groups" [ref=e105] [cursor=pointer]
+                - tab "Teams" [ref=e106] [cursor=pointer]
+                - tab "Permissions" [ref=e107] [cursor=pointer]
+                - tab "Portfolio Access Control" [ref=e108] [cursor=pointer]
+          - button " Workflows" [ref=e111] [cursor=pointer]:
+            - generic [ref=e112]: 
+            - strong [ref=e113]: Workflows
+        - generic [ref=e116]:
+          - generic [ref=e117]: General
+          - generic [ref=e119]:
+            - generic [ref=e120]:
+              - button " Create User" [ref=e123] [cursor=pointer]:
+                - generic [ref=e124]: 
+                - text: Create User
+              - generic [ref=e125]:
+                - button "Refresh" [ref=e126] [cursor=pointer]:
+                  - generic [ref=e127]: 
+                - button "Columns" [ref=e129] [cursor=pointer]:
+                  - generic [ref=e130]: 
+              - searchbox "Search" [ref=e132]: test-user_VP_PERMS
+            - table [ref=e135]:
+              - rowgroup [ref=e136]:
+                - row "Username Full name Email Teams" [ref=e137]:
+                  - cell "Username" [ref=e138]:
+                    - generic [ref=e139]: Username
+                  - cell "Full name" [ref=e140]:
+                    - generic [ref=e141]: Full name
+                  - cell "Email" [ref=e142]:
+                    - generic [ref=e143]: Email
+                  - cell "Teams" [ref=e144]:
+                    - generic [ref=e145]: Teams
+              - rowgroup [ref=e146]:
+                - row "test-user_VP_PERMS test-user_VP_PERMS 0" [ref=e147]:
+                  - cell "test-user_VP_PERMS" [ref=e148]
+                  - cell [ref=e149]
+                  - cell "test-user_VP_PERMS" [ref=e150]
+                  - cell "0" [ref=e151]
+                - row "Team membership Permissions ✕ User must change password at next login ✕ Password never expires ✕ Suspended Change Password Delete User" [ref=e152]:
+                  - cell "Team membership Permissions ✕ User must change password at next login ✕ Password never expires ✕ Suspended Change Password Delete User" [ref=e153]:
+                    - generic [ref=e155]:
+                      - generic [ref=e156]:
+                        - group "Team membership" [ref=e157]:
+                          - generic [ref=e158]: Team membership
+                          - listitem [ref=e161]:
+                            - button "" [ref=e162] [cursor=pointer]:
+                              - generic [ref=e163]: 
+                        - group "Permissions" [ref=e165]:
+                          - generic [ref=e166]: Permissions
+                          - generic [ref=e168]:
+                            - listitem [ref=e170]:
+                              - button "" [ref=e171] [cursor=pointer]:
+                                - generic [ref=e172]: 
+                              - generic [ref=e173]: VIEW_PORTFOLIO
+                            - listitem [ref=e174]:
+                              - button "" [ref=e175] [cursor=pointer]:
+                                - generic [ref=e176]: 
+                      - generic [ref=e178]:
+                        - group [ref=e179]:
+                          - generic [ref=e180]: Full name *
+                          - group [ref=e182]:
+                            - textbox "Full name *" [ref=e183]:
+                              - /placeholder: Full name
+                        - group [ref=e184]:
+                          - generic [ref=e185]: Email *
+                          - group [ref=e187]:
+                            - textbox "Email *" [ref=e188]:
+                              - /placeholder: Email
+                              - text: test-user_VP_PERMS
+                        - generic [ref=e190] [cursor=pointer]: ✕
+                        - text: User must change password at next login
+                        - generic [ref=e192] [cursor=pointer]: ✕
+                        - text: Password never expires
+                        - generic [ref=e194] [cursor=pointer]: ✕
+                        - text: Suspended
+                        - generic [ref=e195]:
+                          - button "Change Password" [ref=e196] [cursor=pointer]
+                          - button "Delete User" [ref=e197] [cursor=pointer]
+                - row "test-user_VP_PERMS test-user_VP_PERMS test-user_VP_PERMS 0" [ref=e198]:
+                  - cell "test-user_VP_PERMS" [ref=e199]
+                  - cell "test-user_VP_PERMS" [ref=e200]
+                  - cell "test-user_VP_PERMS" [ref=e201]
+                  - cell "0" [ref=e202]
+            - generic [ref=e204]: Showing 1 to 2 of 2 rows
+  - contentinfo [ref=e205]:
+    - generic [ref=e206]:
+      - button "Dependency-Track" [ref=e207] [cursor=pointer]
+      - text: v5.7.0-alpha.3-SNAPSHOT
+```
